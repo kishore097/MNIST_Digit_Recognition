@@ -77,7 +77,7 @@ def test(network, test_loader, test_losses):
     100. * correct / len(test_loader.dataset)))
   
 
-
+# Test greek letters handwritten, extension and calculate KNN
 def main(argv):
 
     n_epochs = 3
