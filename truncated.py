@@ -75,7 +75,7 @@ def test(network, test_loader, test_losses):
     test_loss, correct, len(test_loader.dataset),
     100. * correct / len(test_loader.dataset)))
   
-# 
+# Task 2 analyze filers of convolution layer 2 weights
 def main(argv):
 
     n_epochs = 3
@@ -85,7 +85,7 @@ def main(argv):
     momentum = 0.5 
     log_interval = 10
     random_seed = 1 
-    torch.backends.cudnn.enabled = True
+    torch.backends.cudnn.enabled = False
     torch.manual_seed(random_seed)
     train_loader = torch.utils.data.DataLoader(
     torchvision.datasets.MNIST('/home/kishore/Documents/mnist', train=True, download=True,
